@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     return render_template("index.html")
-
+# saving time and taking input
 @app.route("/user_data/<user>")
 def user_data(user):
     time=datetime.now().strftime('%D-%M-%Y %H:%M:%S')
