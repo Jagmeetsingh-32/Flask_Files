@@ -13,6 +13,7 @@ basedir = os.path.abspath(os.path.dirname('instance'))
 
 db = SQLAlchemy(app)
 
+
 class Hello(db.Model):
     __tablename__="user"
     sno = db.Column(db.Integer, primary_key=True)
